@@ -1,0 +1,23 @@
+{
+  "name": "be-mongo-mern53",
+  "version": "1.0.0",
+  "description": "Backend MongoDB Express app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sainathvalavala/BE-Mongo-MERN53.git"
+  },
+  "author": "SaiNath",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sainathvalavala/BE-Mongo-MERN53/issues"
+  },
+  "homepage": "https://github.com/sainathvalavala/BE-Mongo-MERN53#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.19.3"
+  }
+}
