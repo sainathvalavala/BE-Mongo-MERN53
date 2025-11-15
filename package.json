@@ -18,6 +18,7 @@
   "homepage": "https://github.com/sainathvalavala/BE-Mongo-MERN53#readme",
   "dependencies": {
     "express": "^5.1.0",
-    "mongoose": "^8.19.3"
+    "mongoose": "^8.19.3",
+    "nodemon": "^3.1.11"
   }
 }
