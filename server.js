@@ -15,7 +15,7 @@ mongoose
     console.error("MongoDb connection error:", err);
   });
 
-//Define the schema( format )  - to check data is in correct format or not!
+///Define the schema( format )  - to check data is in correct format or not!
 let studentSchema = mongoose.Schema({
   firstname: String,
   lastname: String,
