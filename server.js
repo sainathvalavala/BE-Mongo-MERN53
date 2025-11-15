@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
+var studentModel = require("./student.model");
 //install mongoose(dbms) and import
-
 const mongoose = require("mongoose");
 //connect to the exact database("add database name before ?appName")
 mongoose
@@ -15,18 +15,18 @@ mongoose
     console.error("MongoDb connection error:", err);
   });
 
-///Define the schema( format )  - to check data is in correct format or not!
+//Define the schema( format )  - to check data is in correct format or not!
 let studentSchema = mongoose.Schema({
   firstname: String,
   lastname: String,
 });
 
 //Declare the Modal - establish connection to the  collection of database (remember singular plural issue)
-let studentsModel = mongoose.model("student", studentSchema);
+let studentModel = mongoose.model("student", studentSchema);
 
 app.get("/", (req, res) => {
   //call the find method with model
-  studentsModel.find({}).then((data) => {
+  studentModel.find({}).then((data) => {
     console.log(data);
     res.send(data);
   });
